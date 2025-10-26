@@ -1,0 +1,146 @@
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    height: 100vh;
+    min-width: fit-content;
+    z-index: 2;
+}
+
+header {
+    min-height: 80px;
+    top: 0;
+    background-color: #74ACDF; /* celeste */
+    position: fixed;
+    position: sticky;
+    font-size: 1.3rem;
+    z-index: 3;
+    border-bottom: white solid 1px;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+}
+
+footer h3 {
+    border-top: white solid 2px;
+    padding-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-size: medium;
+}
+
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+body {
+    background-color: #ffffff; /* blanco */
+}
+
+#h1hero  {
+    font-size: 70px;
+    background-color: #74ACDF; /* celeste */
+    text-align: center;
+    color: #ffffff; /* blanco */
+    margin: auto;
+    max-width: 760px;
+}
+
+#h2hero{
+    color: #74ACDF; /* celeste */
+    font-size: 50px;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 700px;
+    height: 400px;
+    margin: auto;
+}
+
+#contactoForm {
+    justify-content: center;
+    max-width: 750px;
+    margin: auto;
+}
+
+#contact .row {
+    max-width: 700px;
+    margin: auto;
+}
+
+.form-signin {
+    background-color: #ffffff; /* blanco */
+    max-width: 400px;
+}
+
+#login {
+    background-color: #ffffff; /* blanco */
+}
+
+#creditos {
+    background-color: #ffffff; /* blanco */
+    padding-top: 50px;
+}
+
+#creditos form {
+    justify-content: center;
+    max-width: 600px;
+    min-width: 390px;
+    background: #74ACDF; /* celeste */
+    border: #F6C100 3px solid; /* borde amarillo sol */
+    border-radius: 5%;
+    font-weight: 500;
+    color: #ffffff; /* texto blanco */
+    font-size: 1.1rem;
+}
+
+#registro form {
+    justify-content: center;
+    max-width: 750px;
+    margin: auto;
+    border: #74ACDF 2px solid; /* celeste */
+    padding: 15px;
+    margin-top: 70px;
+    padding-top: 70px;
+}
+
+.nav-link {
+    color: white;
+}
+
+.active {
+    color: white;
+}
+
+.nav-item :hover {
+    color: white;
+}
+
+#cuotas {
+    justify-content: center;
+    margin: auto;
+    max-width: 750px;
+}
+
+h1 {
+    font-size: 70px;
+    text-align: center;
+    color: #74ACDF; /* celeste */
+    margin: auto;
+    max-width: 760px;
+}
+
+footer {
+    background-color: #74ACDF; /* celeste */
+}

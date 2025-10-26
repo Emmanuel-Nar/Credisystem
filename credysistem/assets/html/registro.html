@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/animaciones.css">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<header class="height p-2">
+    <nav class="navbar sticky-top navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#sobre-mi">BOSTON CRED</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: end;">
+                <ul class="navbar-nav ">
+                    <li class="nav-item ps-3">
+                        <a class="nav-link active text-white" aria-current="page" href="../../index.php">Home</a>
+                    </li>
+                    <li class="nav-item ps-3 pe-2 pe-3">
+                        <a class="nav-link text-white " href="../html/login.html">YA TENGO CUENTA</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+    </nav>
+</header>
+
+
+<body>
+    <section id="registro">
+        <div class="w-75 m-auto d-flex justify-content-center">
+            <div class="col-md-7 col-lg-8">
+
+                <!--  -->
+
+                <form class="needs-validation m-auto" action="/credysistem/guardar_usuario.php" method="POST"
+                    novalidate>
+
+                    <h4 class="mb-3 d-flex justify-content-center">Genera tu cuenta</h4>
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <label for="firstName" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="firstName" name="nombre" placeholder="" value=""
+                                required="">
+                            <div class="invalid-feedback">
+                                este campo es incorrecto.
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <label for="lastName" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="lastName" name="apellido" placeholder=""
+                                value="" required="">
+                            <div class="invalid-feedback">
+                                este campo es incorrecto.
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <label for="telefono" class="form-label">Telefono</label>
+                            <input type="phone" class="form-control" id="phone" name="telefono" placeholder="" value=""
+                                required="">
+                            <div class="invalid-feedback">
+                                este campo es incorrecto.
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="Dni" class="form-label">Dni</label>
+                            <input type="number" class="form-control" id="Dni" name="dni" placeholder="" value=""
+                                required="">
+                            <div class="invalid-feedback">
+                                este campo es obligatorio.
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email"
+                                placeholder="boston@hotmail.com" required="">
+                            <div class="invalid-feedback">
+                                Por favor introducir un email valido.
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="address" class="form-label">Direccion</label>
+                            <input type="text" class="form-control" id="address" name="direccion"
+                                placeholder=" Bv.oroño 690" required="">
+                            <div class="invalid-feedback">
+                                Por favor introducir una direccion valida.
+                            </div>
+                        </div>
+
+                        <div class="col-md-5">
+                            <label for="country" class="form-label">Pais</label>
+                            <select class="form-select" id="country" name="pais" required="">
+                                <option value="">Elegir...</option>
+                                <option>Argentina</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Por favor selecciona un pais.
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="state" class="form-label">Ciudad</label>
+                            <select class="form-select" id="state" name="ciudad" required="">
+                                <option value="">Elegir...</option>
+                                <option>Rosario</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Por favor selecciona una Ciudad.
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <label for="zip" class="form-label">Codigo Postal</label>
+                            <input type="text" class="form-control" id="zip" name="codigo_postal" placeholder=""
+                                required="">
+                            <div class="invalid-feedback">
+                                Codigo postal requerido.
+                            </div>
+                        </div>
+                    </div><br>
+
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="save-info" name="terminos" required>
+                        <div class="invalid-feedback">
+                            No acepto las bases y condiciones.
+                        </div>
+                        <label class="form-check-label" for="save-info"> <a href="">He leído y acepto los términos y
+                                condiciones de uso</a></label>
+                    </div><br>
+                    <div class="col-12">
+                        <label for="password" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="password" name="password" required
+                            minlength="6">
+                        <div class="invalid-feedback">Debes ingresar una contraseña de al menos 6 caracteres.</div>
+                    </div>
+
+                    <div class="col-12">
+                        <label for="password2" class="form-label">Confirmar Contraseña</label>
+                        <input type="password" class="form-control" id="password2" required minlength="6">
+                        <div class="invalid-feedback">Las contraseñas deben coincidir.</div>
+                    </div>
+
+                    <script>
+                        (() => {
+                            'use strict'
+                            const form = document.querySelector('.needs-validation');
+                            const pass = document.getElementById('password');
+                            const pass2 = document.getElementById('password2');
+
+                            form.addEventListener('submit', e => {
+                                if (!form.checkValidity() || pass.value !== pass2.value) {
+                                    e.preventDefault();
+                                    e.stopPropagation();
+                                    if (pass.value !== pass2.value) {
+                                        pass2.setCustomValidity("Las contraseñas no coinciden");
+                                    } else {
+                                        pass2.setCustomValidity("");
+                                    }
+                                }
+                                form.classList.add('was-validated');
+                            }, false);
+                        })();
+                    </script>
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-primary btn-lg w-50" type="submit">Registrarme</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+<footer>
+    <div>
+        <h3>
+            CREDISYSTEM
+        </h3>
+    </div>
+
+</footer>
+
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+<script>
+    (() => {
+        'use strict'
+
+
+        const forms = document.querySelectorAll('.needs-validation')
+
+
+        Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+            }, false)
+        })
+    })()
+</script>
+
+<script src="/assets/main.js"></script>
